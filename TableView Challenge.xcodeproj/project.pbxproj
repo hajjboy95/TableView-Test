@@ -14,13 +14,13 @@
 		EC788A8C193782E4000ABB84 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC788A8B193782E4000ABB84 /* main.m */; };
 		EC788A90193782E4000ABB84 /* UnSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC788A8F193782E4000ABB84 /* UnSAppDelegate.m */; };
 		EC788A93193782E4000ABB84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC788A91193782E4000ABB84 /* Main.storyboard */; };
-		EC788A96193782E4000ABB84 /* UnSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC788A95193782E4000ABB84 /* UnSViewController.m */; };
 		EC788A98193782E4000ABB84 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC788A97193782E4000ABB84 /* Images.xcassets */; };
 		EC788A9F193782E4000ABB84 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC788A9E193782E4000ABB84 /* XCTest.framework */; };
 		EC788AA0193782E4000ABB84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC788A7F193782E4000ABB84 /* Foundation.framework */; };
 		EC788AA1193782E4000ABB84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC788A83193782E4000ABB84 /* UIKit.framework */; };
 		EC788AA9193782E4000ABB84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC788AA7193782E4000ABB84 /* InfoPlist.strings */; };
 		EC788AAB193782E4000ABB84 /* TableView_ChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC788AAA193782E4000ABB84 /* TableView_ChallengeTests.m */; };
+		EC788AB619378442000ABB84 /* UnSTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC788AB519378442000ABB84 /* UnSTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,14 @@
 		EC788A8E193782E4000ABB84 /* UnSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnSAppDelegate.h; sourceTree = "<group>"; };
 		EC788A8F193782E4000ABB84 /* UnSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnSAppDelegate.m; sourceTree = "<group>"; };
 		EC788A92193782E4000ABB84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC788A94193782E4000ABB84 /* UnSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnSViewController.h; sourceTree = "<group>"; };
-		EC788A95193782E4000ABB84 /* UnSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnSViewController.m; sourceTree = "<group>"; };
 		EC788A97193782E4000ABB84 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC788A9D193782E4000ABB84 /* TableView ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TableView ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC788A9E193782E4000ABB84 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EC788AA6193782E4000ABB84 /* TableView ChallengeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableView ChallengeTests-Info.plist"; sourceTree = "<group>"; };
 		EC788AA8193782E4000ABB84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EC788AAA193782E4000ABB84 /* TableView_ChallengeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableView_ChallengeTests.m; sourceTree = "<group>"; };
+		EC788AB419378442000ABB84 /* UnSTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnSTableViewController.h; path = ../UnSTableViewController.h; sourceTree = "<group>"; };
+		EC788AB519378442000ABB84 /* UnSTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UnSTableViewController.m; path = ../UnSTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +112,11 @@
 		EC788A85193782E4000ABB84 /* TableView Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				EC788AB419378442000ABB84 /* UnSTableViewController.h */,
+				EC788AB519378442000ABB84 /* UnSTableViewController.m */,
 				EC788A8E193782E4000ABB84 /* UnSAppDelegate.h */,
 				EC788A8F193782E4000ABB84 /* UnSAppDelegate.m */,
 				EC788A91193782E4000ABB84 /* Main.storyboard */,
-				EC788A94193782E4000ABB84 /* UnSViewController.h */,
-				EC788A95193782E4000ABB84 /* UnSViewController.m */,
 				EC788A97193782E4000ABB84 /* Images.xcassets */,
 				EC788A86193782E4000ABB84 /* Supporting Files */,
 			);
@@ -250,9 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC788AB619378442000ABB84 /* UnSTableViewController.m in Sources */,
 				EC788A8C193782E4000ABB84 /* main.m in Sources */,
 				EC788A90193782E4000ABB84 /* UnSAppDelegate.m in Sources */,
-				EC788A96193782E4000ABB84 /* UnSViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
